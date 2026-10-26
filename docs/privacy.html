@@ -4,19 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LocalCast Privacy Policy</title>
-  <style>
-    :root { --primary: #1F4E79; --text: #1d2733; --muted: #5b6878; --bg: #ffffff; }
-    @media (prefers-color-scheme: dark) {
-      :root { --primary: #7fb2e0; --text: #e6edf3; --muted: #9aa7b4; --bg: #10161d; }
-    }
-    body { margin: 0; font-family: system-ui, "Segoe UI", sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
-    main { max-width: 760px; margin: 0 auto; padding: 48px 16px; }
-    h1 { color: var(--primary); }
-    a { color: var(--primary); }
-    .muted { color: var(--muted); }
-  </style>
+  <link rel="stylesheet" href="theme.css">
+  <script src="theme.js"></script>
 </head>
 <body>
+<div class="topbar">
+  <div class="theme-switch" role="group" aria-label="Colour theme">
+    <button type="button" data-mode="system" aria-pressed="true">System</button>
+    <button type="button" data-mode="light" aria-pressed="false">Light</button>
+    <button type="button" data-mode="dark" aria-pressed="false">Dark</button>
+  </div>
+</div>
 <main>
   <h1>Privacy policy</h1>
   <p class="muted">LocalCast Doc Converter · Last updated 2026-10-26</p>
