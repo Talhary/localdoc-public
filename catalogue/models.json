@@ -1,0 +1,19 @@
+{
+  "catalogueVersion": "0.0.0",
+  "allowedHosts": ["github.com", "objects.githubusercontent.com"],
+  "fields": {
+    "id": "stable model id, e.g. ocr-rapidocr-latin",
+    "displayName": "name shown on the model card",
+    "task": "ocr | layout | table | bg-removal | upscale | caption | translate",
+    "version": "pinned model version; changing it requires a changelog line",
+    "sizeBytes": "download size",
+    "sha256": "hash verified before install",
+    "licence": "SPDX id; must be on the allow-list",
+    "licenceCheckedOn": "YYYY-MM-DD",
+    "sourceUrl": "Release asset URL in this repository",
+    "minRamMb": "minimum RAM",
+    "gpuRecommended": "boolean",
+    "languages": "supported languages or scripts"
+  },
+  "models": []
+}
