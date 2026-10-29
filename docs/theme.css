@@ -24,10 +24,38 @@ ul { padding-left: 20px; }
 .badge { display: inline-block; padding: 4px 10px; border-radius: 999px; background: var(--card); font-weight: 600; font-size: 14px; }
 footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
 
-.topbar { display: flex; justify-content: flex-end; max-width: 760px; margin: 0 auto; padding: 16px 16px 0; }
+.topbar { display: flex; justify-content: flex-end; max-width: 1040px; margin: 0 auto; padding: 16px 16px 0; }
 .theme-switch { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 .theme-switch button {
   font: inherit; font-size: 13px; padding: 4px 10px; border: 0; background: transparent; color: var(--muted); cursor: pointer;
 }
 .theme-switch button[aria-pressed="true"] { background: var(--card); color: var(--text); font-weight: 600; }
 .theme-switch button:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+
+/* Landing page: the app's blue-to-violet accent, screenshots and feature cards. */
+:root { --grad-a: #2563eb; --grad-b: #7c3aed; --shadow: 0 12px 40px rgba(30, 41, 80, .18); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --grad-a: #3b82f6; --grad-b: #8b5cf6; --shadow: 0 12px 40px rgba(0, 0, 0, .5); }
+}
+:root[data-theme="dark"] { --grad-a: #3b82f6; --grad-b: #8b5cf6; --shadow: 0 12px 40px rgba(0, 0, 0, .5); }
+
+main.wide { max-width: 1040px; }
+.hero { text-align: center; padding: 24px 0 8px; }
+.hero h1 {
+  font-size: clamp(32px, 6vw, 52px); line-height: 1.1; margin: 12px 0 8px;
+  background: linear-gradient(90deg, var(--grad-a), var(--grad-b)); -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+}
+.hero .tag { font-size: 18px; max-width: 640px; margin: 0 auto; }
+.hero .status { display: inline-block; margin-top: 16px; padding: 6px 14px; border-radius: 8px; color: #fff; font-weight: 600;
+  background: linear-gradient(90deg, var(--grad-a), var(--grad-b)); }
+.badge { border: 1px solid var(--border); }
+.shot { margin: 32px 0; }
+.shot img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--shadow); }
+.features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px;
+  border-top: 3px solid var(--grad-a); }
+.card:nth-child(even) { border-top-color: var(--grad-b); }
+.card h2 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); }
+@media (max-width: 640px) { .features { grid-template-columns: 1fr; } }

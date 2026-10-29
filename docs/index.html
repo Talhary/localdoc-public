@@ -16,28 +16,65 @@
     <button type="button" data-mode="dark" aria-pressed="false">Dark</button>
   </div>
 </div>
-<main>
-  <span class="badge">100% Offline</span>
-  <h1>LocalCast Doc Converter</h1>
-  <p class="tag">Offline document, PDF and image converter for Windows. Your files never leave this computer.</p>
+<main class="wide">
+  <header class="hero">
+    <span class="badge">100% Offline</span>
+    <h1>LocalCast Doc Converter</h1>
+    <p class="tag">Convert documents, spreadsheets, images and PDFs on your own Windows PC. Your files never leave
+      it: no upload, no account, and it works in airplane mode.</p>
+    <p class="status">Coming to the Microsoft Store</p>
+  </header>
 
-  <h2>What it does</h2>
-  <ul>
-    <li>Markdown, Word, HTML and text to PDF and to each other</li>
-    <li>Compress, resize and convert images, including HEIC from iPhones</li>
-    <li>Merge, split, compress and rotate PDFs</li>
-    <li>CSV, Excel, JSON and YAML conversions</li>
-  </ul>
+  <figure class="shot">
+    <img src="img/convert-dark.webp" width="1200" height="750"
+         alt="LocalCast converting a Markdown report to PDF, with a live page preview and options for theme, page size, margins and orientation.">
+  </figure>
 
-  <h2>Why offline matters</h2>
-  <p>No upload, no account, works in airplane mode. LocalCast contacts exactly one host, and only when you choose
-    to download an optional AI model: this project's releases on github.com.</p>
+  <section class="features">
+    <div class="card">
+      <h2>Documents</h2>
+      <p>Markdown, Word, HTML and text to PDF and to each other. Reads OpenDocument and RTF, writes EPUB. Live page
+        preview, four themes, table of contents.</p>
+    </div>
+    <div class="card">
+      <h2>Spreadsheets and data</h2>
+      <p>CSV, TSV, Excel, JSON and YAML, plus tables found in Markdown and HTML. Types, dates and multiple sheets
+        carry over.</p>
+    </div>
+    <div class="card">
+      <h2>Images</h2>
+      <p>PNG, JPG, WebP, GIF, BMP, SVG and HEIC from iPhones. Compress, resize, rotate and strip metadata, with a
+        before and after view. Turn a set of photos into one PDF.</p>
+    </div>
+    <div class="card">
+      <h2>PDF tools</h2>
+      <p>Merge, split, compress, rotate and reorder pages, PDF to images, extract text and images, and add or remove
+        AES-256 passwords.</p>
+    </div>
+  </section>
 
-  <p><strong>Status:</strong> in development. Coming to the Microsoft Store.</p>
+  <figure class="shot">
+    <img src="img/pdf-tools-light.webp" width="1200" height="750" loading="lazy"
+         alt="The PDF tools: merge, split, compress, rotate and reorder, PDF to images, images to PDF, extract, and protect or unlock.">
+  </figure>
+
+  <section>
+    <h2>Why offline matters</h2>
+    <p>Contracts, payslips, medical letters and family photos should not have to visit someone else's server to
+      change format. LocalCast does every conversion on your PC and makes no network connections of its own. See the
+      <a href="privacy.html">privacy policy</a>.</p>
+    <h2>Every script, the same on every PC</h2>
+    <p>PDFs use bundled Noto fonts, so Urdu, Arabic, Chinese, Greek and Cyrillic text renders correctly and looks
+      the same wherever you open it.</p>
+    <h2>Free, with a one-time Premium</h2>
+    <p>Every conversion is free. Premium removes the batch and preset limits for a single purchase: no
+      subscription and no account.</p>
+  </section>
 
   <footer>
     <a href="privacy.html">Privacy policy</a> ·
-    <a href="https://github.com/Talhary/localdoc-public">GitHub</a>
+    <a href="https://github.com/Talhary/localdoc-public">GitHub</a> ·
+    <a href="https://github.com/Talhary/localdoc-public/issues">Report an issue</a>
   </footer>
 </main>
 </body>

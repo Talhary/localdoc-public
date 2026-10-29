@@ -9,7 +9,7 @@ without authentication. Nothing here compiles into the app.
 | Path | Contents |
 | --- | --- |
 | `catalogue/models.json` | Optional AI model catalogue (id, size, SHA-256, licence, source). Model files are published as Releases of this repo |
-| `docs/` | Landing page and privacy policy (served by GitHub Pages) |
+| `docs/` | Landing page, screenshots and privacy policy (served by GitHub Pages) |
 | `docs/.well-known/security.txt` | Security contact |
 | `THIRD-PARTY.md` | Licences of every bundled library, codec, font, model and dictionary |
 | `.github/ISSUE_TEMPLATE/` | Bug report and feature request templates |
